@@ -1,0 +1,41 @@
+@keyframes barIndicator {
+  0% {
+    left: -10%;
+  }
+  100% {
+    left: 110%;
+    opacity: 1;
+  }
+}
+
+#wrap {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.12);
+  height: 20px;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#progress {
+  background-color: #93142b;
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0px 0px 12px 0px #282121;
+  transition: 1s;
+}
+
+#barIndicator {
+  position: absolute;
+  height: 250%;
+  width: 5px;
+  background-color: white;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  transform: rotate(20deg) translateY(-50%);
+  animation: barIndicator 3s infinite;
+}

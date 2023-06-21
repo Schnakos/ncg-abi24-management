@@ -1,0 +1,10 @@
+{
+  "components": {
+    "progress-bar": {
+      "name": "a-progress-bar",
+      "template": "/components/progress-bar/index.html",
+      "component": "/components/progress-bar/main.js",
+      "styles": ["/components/progress-bar/style.css"]
+    }
+  }
+}
