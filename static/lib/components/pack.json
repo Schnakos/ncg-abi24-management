@@ -4,7 +4,19 @@
       "name": "a-progress-bar",
       "template": "/components/progress-bar/index.html",
       "component": "/components/progress-bar/main.js",
-      "styles": ["/components/progress-bar/style.css"]
+      "styles": ["/main.css", "/components/progress-bar/style.css"]
+    },
+    "top-bar": {
+      "name": "a-top-bar",
+      "template": "/components/top-bar/index.html",
+      "component": "/components/top-bar/main.js",
+      "styles": ["/main.css", "/components/top-bar/style.css"]
+    },
+    "user": {
+      "name": "a-user",
+      "template": "/components/user/index.html",
+      "component": "/components/user/main.js",
+      "styles": ["/main.css", "/components/user/style.css"]
     }
   }
 }

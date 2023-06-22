@@ -1,0 +1,26 @@
+@font-face {
+  font-family: Dosis;
+  src: url("/lib/fonts/dosis.ttf");
+}
+
+m-overwrite-container,
+:host,
+:root {
+  --contentSpacing: 8px;
+  --largeContentSpacing: 16px;
+  --borderRadius: 5px;
+  --fontFamily: Dosis;
+  --accentColor1: #bb4430;
+  --accentColor2: #607b7d;
+  --contrastColor: #1e212b;
+  --backgroundColor1: #d1d5de;
+  --backgroundColor2: #e0e0e2;
+  --generalShadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+body {
+  font-family: var(--fontFamily);
+  background-color: var(--backgroundColor1);
+  color: var(--contrastColor);
+  margin: 0;
+}

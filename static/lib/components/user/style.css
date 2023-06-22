@@ -1,0 +1,10 @@
+#wrap {
+  display: flex;
+  flex-direction: row;
+  gap: calc(var(--contentSpacing) / 3);
+  align-items: center;
+}
+
+a {
+  color: var(--grey);
+}

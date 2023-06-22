@@ -10,15 +10,16 @@
 
 #wrap {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.12);
+  background-color: var(--backgroundColor2);
   height: 20px;
   position: relative;
   border-radius: 15px;
   overflow: hidden;
+  box-shadow: var(--generalShadow);
 }
 
 #progress {
-  background-color: #93142b;
+  background-color: var(--accentColor);
   position: absolute;
   height: 100%;
   width: 0%;
@@ -26,16 +27,24 @@
   border-radius: 15px;
   box-shadow: 0px 0px 12px 0px #282121;
   transition: 1s;
+  display: flex;
+  align-items: content;
+  justify-content: flex-end;
+  padding-right: var(--contentSpacing);
 }
 
 #barIndicator {
   position: absolute;
   height: 250%;
   width: 5px;
-  background-color: white;
+  background-color: var(--backgroundColor2);
   left: 0;
   top: 0;
   opacity: 0.5;
   transform: rotate(20deg) translateY(-50%);
   animation: barIndicator 3s infinite;
+}
+
+#value {
+  color: var(--backgroundColor2);
 }
