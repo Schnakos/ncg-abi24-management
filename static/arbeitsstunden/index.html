@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abi24 Arbeitsstunden</title>
+  </head>
+  <body>
+    <m-overwrite-container>
+      <a-top-bar id="topBar" user-color="white">Arbeitsstunden</a-top-bar>
+      <div class="listContent">
+        <a-box>
+          <a slot="title">Deine Arbeitsstunden</a>
+          <a-progress-bar
+            slot="content"
+            progress="80"
+            value="8"
+          ></a-progress-bar>
+        </a-box>
+        <a-box>
+          <a slot="title">Arbeitsstunden anfordern</a>
+          <m-text-input
+            textarea="true"
+            placeholder="Begründung"
+            slot="content"
+          ></m-text-input>
+          <m-text-input
+            number="true"
+            placeholder="Anzahl"
+            value="1"
+            slot="content"
+          >
+          </m-text-input>
+          <i slot="content"
+            >Arbeitsstunden von Aktionen werden automatisch angefordert.</i
+          >
+          <m-button slot="buttons">Absenden</m-button>
+        </a-box>
+        <m-divider></m-divider>
+        <a-box>
+          <a slot="title">Arbeitsstunden bearbeiten</a>
+          <m-text-input
+            placeholder="Schüler Suche"
+            slot="content"
+          ></m-text-input>
+          <div id="searchResults" slot="content">
+            <a-user>User</a-user>
+          </div>
+        </a-box>
+        <m-divider></m-divider>
+        <a-request></a-request>
+      </div>
+    </m-overwrite-container>
+    <script src="private/render/linker.js" class="server"></script>
+  </body>
+</html>

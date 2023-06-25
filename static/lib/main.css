@@ -23,4 +23,26 @@ body {
   background-color: var(--backgroundColor1);
   color: var(--contrastColor);
   margin: 0;
+  box-sizing: border-box;
+}
+
+.listContent {
+  padding: var(--largeContentSpacing);
+  display: flex;
+  flex-direction: column;
+  gap: var(--largeContentSpacing);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.listContent m-divider {
+  --margin: 0;
+}
+
+.gridContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: var(--largeContentSpacing);
+  grid-row-gap: var(--largeContentSpacing);
 }

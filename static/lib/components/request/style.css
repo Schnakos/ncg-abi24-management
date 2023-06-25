@@ -1,0 +1,4 @@
+m-button {
+  --accentColor: var(--contrastColor);
+  --scale: 0.3;
+}

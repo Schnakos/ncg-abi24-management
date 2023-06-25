@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abi24 Aktion erstellen</title>
+  </head>
+  <body>
+    <m-overwrite-container>
+      <a-top-bar id="topBar" user-color="white">Aktion erstellen</a-top-bar>
+      <div class="listContent">
+        <a-box>
+          <a slot="title">Neue Aktion</a>
+          <m-text-input slot="content" placeholder="Name"></m-text-input>
+          <m-text-input
+            slot="content"
+            placeholder="Arbeitsstunden"
+            value="1"
+            number="true"
+          ></m-text-input>
+          <m-text-input
+            slot="content"
+            placeholder="Datum"
+            date="true"
+          ></m-text-input>
+          <m-text-input
+            slot="content"
+            placeholder="Anzahl Teilnehmer"
+            number="true"
+            value="5"
+          ></m-text-input>
+          <m-text-input
+            slot="content"
+            placeholder="Beschreibung"
+            textarea="true"
+          ></m-text-input>
+          <m-button slot="buttons">Erstellen</m-button>
+        </a-box>
+      </div>
+    </m-overwrite-container>
+    <script src="private/render/linker.js" class="server"></script>
+  </body>
+</html>

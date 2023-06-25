@@ -1,3 +1,20 @@
 m-overwrite-container {
   --accentColor: var(--accentColor1);
 }
+
+#topBar {
+  --textColor: var(--accentColor1);
+  --backgroundColor: var(--backgroundColor2);
+}
+
+.accentColorBlock {
+  --backgroundColor: var(--accentColor1);
+}
+
+.secondaryAccentColorBlock {
+  --backgroundColor: var(--accentColor2);
+}
+
+.contrastColorBlock {
+  --backgroundColor: var(--contrastColor);
+}

@@ -1,0 +1,16 @@
+#box {
+  border-radius: var(--borderRadius);
+  background-color: var(--backgroundColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--largeContentSpacing);
+  overflow: hidden;
+  position: relative;
+  color: var(--backgroundColor2);
+}
+
+m-wave {
+  --accentColor: var(--backgroundColor2);
+}

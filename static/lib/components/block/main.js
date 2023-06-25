@@ -1,14 +1,13 @@
 export class Component {
   constructor(options) {
-    this.options = options;
     this.document = options.shadowDom;
-    this.user = this.document.getElementById("user");
+    this.img = this.document.getElementById("img");
   }
 
   attributeChangedCallback(attribute, oldValue, newValue) {
     switch (attribute) {
-      case "user-color":
-        this.user.setAttribute("color", newValue);
+      case "src":
+        this.img.src = newValue;
         break;
     }
   }

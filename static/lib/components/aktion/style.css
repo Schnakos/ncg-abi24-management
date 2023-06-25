@@ -1,0 +1,4 @@
+m-button {
+  --accentColor: var(--accentColor1);
+  --scale: 0.3;
+}
