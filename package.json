@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "nodemon .",
-    "create-users": "node private/db/user-creation.js"
+    "create-users": "node private/db/user-creation.js",
+    "export-users": "node private/db/user-export.js"
   },
   "repository": {
     "type": "git",
