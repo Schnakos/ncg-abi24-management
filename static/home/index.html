@@ -5,24 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abi24</title>
+    <link rel="manifest" href="/manifest.webmanifest" />
   </head>
   <body>
     <m-overwrite-container>
       <a-top-bar id="topBar">Abitur 2024</a-top-bar>
       <div class="listContent">
-        <a-progress-bar progress="50" value="3.900€"></a-progress-bar>
+        <a-progress-bar
+          progress="0"
+          value="Loading"
+          id="money"
+        ></a-progress-bar>
         <m-divider></m-divider>
         <div class="gridContent">
-          <a-block src="/lib/img/action.svg" class="accentColorBlock"
+          <a-block
+            src="/lib/img/action.svg"
+            class="accentColorBlock"
+            link="/aktionen/"
             >Aktionen</a-block
           >
-          <a-block src="/lib/img/groups.svg" class="secondaryAccentColorBlock"
+          <a-block
+            src="/lib/img/groups.svg"
+            class="secondaryAccentColorBlock"
+            link="/komitees"
             >Komitees</a-block
           >
-          <a-block src="/lib/img/clock.svg" class="contrastColorBlock"
+          <a-block
+            src="/lib/img/clock.svg"
+            class="contrastColorBlock"
+            link="/arbeitsstunden/"
             >Arbeitsstunden</a-block
           >
         </div>
+        <m-divider id="adminDivider"></m-divider>
+        <div class="gridContent">
+          <a-block
+            src="/lib/img/clock.svg"
+            id="log"
+            class="contrastColorBlock"
+            link="/log/"
+            >Veraluf</a-block
+          >
+          <a-block
+            src="/lib/img/money.svg"
+            id="editMoney"
+            class="contrastColorBlock"
+            link="/money/"
+            >Geld</a-block
+          >
+        </div>
+        <i id="pwaTip"
+          >Du kannst diese Seite auch als App installieren. Drücke dafür auf
+          'Teilen' und dann auf 'Zum Startbildschirm hinzufügen.'</i
+        >
       </div>
     </m-overwrite-container>
     <script src="private/render/linker.js" class="server"></script>

@@ -1,0 +1,17 @@
+{
+  "short_name": "Abi 24",
+  "name": "Abitur 2024",
+  "icons": [
+    { "src": "/lib/img/icon.png", "type": "image/png", "sizes": "302x302" },
+    { "src": "/lib/img/icon144.png", "type": "image/png", "sizes": "144x144" },
+    { "src": "/favicon.ico", "type": "image/ico", "sizes": "256x256" }
+  ],
+  "id": "/",
+  "start_url": "/",
+  "background_color": "#d1d5de",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#bb4430",
+  "shortcuts": [],
+  "description": "Management Web App Abitur 2024"
+}

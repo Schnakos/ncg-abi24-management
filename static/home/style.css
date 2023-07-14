@@ -18,3 +18,15 @@ m-overwrite-container {
 .contrastColorBlock {
   --backgroundColor: var(--contrastColor);
 }
+
+#adminDivider {
+  display: none;
+}
+
+#log {
+  display: none;
+}
+
+#editMoney {
+  display: none;
+}

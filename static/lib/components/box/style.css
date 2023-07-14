@@ -39,6 +39,7 @@ h3 {
   align-items: center;
   flex-direction: row-reverse;
   gap: var(--contentSpacing);
+  flex-wrap: wrap;
 }
 
 #content {

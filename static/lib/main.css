@@ -16,6 +16,11 @@ m-overwrite-container,
   --backgroundColor1: #d1d5de;
   --backgroundColor2: #e0e0e2;
   --generalShadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  --accentColorTransparent: #00000000;
+}
+
+m-overwrite-container {
+  display: block;
 }
 
 body {

@@ -7,3 +7,6 @@ m-overwrite-container {
   --textColor: var(--backgroundColor2) !important;
   --backgroundColor: var(--accentColor1) !important;
 }
+#new {
+  display: none;
+}

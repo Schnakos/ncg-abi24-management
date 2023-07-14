@@ -5,7 +5,8 @@
   "main": "main.js",
   "type": "module",
   "scripts": {
-    "test": "nodemon ."
+    "test": "nodemon .",
+    "create-users": "node private/db/user-creation.js"
   },
   "repository": {
     "type": "git",

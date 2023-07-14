@@ -12,30 +12,32 @@
       <div class="listContent">
         <a-box>
           <a slot="title">Neue Aktion</a>
-          <m-text-input slot="content" placeholder="Name"></m-text-input>
+          <m-text-input
+            slot="content"
+            placeholder="Name"
+            id="name"
+          ></m-text-input>
           <m-text-input
             slot="content"
             placeholder="Arbeitsstunden"
             value="1"
             number="true"
-          ></m-text-input>
-          <m-text-input
-            slot="content"
-            placeholder="Datum"
-            date="true"
+            id="workHours"
           ></m-text-input>
           <m-text-input
             slot="content"
             placeholder="Anzahl Teilnehmer"
             number="true"
             value="5"
+            id="userCount"
           ></m-text-input>
           <m-text-input
             slot="content"
             placeholder="Beschreibung"
             textarea="true"
+            id="description"
           ></m-text-input>
-          <m-button slot="buttons">Erstellen</m-button>
+          <m-button slot="buttons" id="create">Erstellen</m-button>
         </a-box>
       </div>
     </m-overwrite-container>

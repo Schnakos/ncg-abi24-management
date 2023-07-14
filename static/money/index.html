@@ -10,16 +10,21 @@
     <m-overwrite-container>
       <a-top-bar id="topBar" user-color="white">Arbeitsstunden</a-top-bar>
       <div class="listContent">
-        <a-progress-bar progress="50" value="9.350€"></a-progress-bar>
+        <a-progress-bar
+          progress="0"
+          value="Loading"
+          id="money"
+        ></a-progress-bar>
         <a-box>
           <a slot="title">Geldstand bearbeiten</a>
           <m-text-input
             slot="content"
             number="true"
             placeholder="Geldstand"
-            value="9350"
+            value="0"
+            id="updatedMoney"
           ></m-text-input>
-          <m-button slot="buttons">Absenden</m-button>
+          <m-button slot="buttons" id="updateMoney">Absenden</m-button>
         </a-box>
       </div>
     </m-overwrite-container>

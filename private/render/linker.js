@@ -1,4 +1,20 @@
-export const server = (document) => {
+import { key } from "../../public/auth.js";
+
+export const server = async (document, options) => {
+  let u = new URL("http://locahost" + options.req.originalUrl);
+  if (
+    u.pathname != "/login/" &&
+    !(await key(options.req.cookies.key)).success
+  ) {
+    options.res.redirect("/login/");
+    return;
+  }
+
+  if (u.pathname == "/") {
+    options.res.redirect("/home/");
+    return;
+  }
+
   let head = document.documentElement.children[0];
   let link = document.createElement("link");
   link.setAttribute("rel", "stylesheet");

@@ -9,13 +9,14 @@
   <body>
     <m-overwrite-container>
       <a-top-bar id="topBar" user-color="white">Arbeitsstunden</a-top-bar>
-      <div class="listContent">
+      <div class="listContent" id="mainContent">
         <a-box>
           <a slot="title">Deine Arbeitsstunden</a>
           <a-progress-bar
             slot="content"
-            progress="80"
+            progress="0"
             value="8"
+            id="currentWorkHours"
           ></a-progress-bar>
         </a-box>
         <a-box>
@@ -24,32 +25,32 @@
             textarea="true"
             placeholder="Begründung"
             slot="content"
+            id="requestReason"
           ></m-text-input>
           <m-text-input
             number="true"
             placeholder="Anzahl"
             value="1"
             slot="content"
+            id="requestAmount"
           >
           </m-text-input>
           <i slot="content"
             >Arbeitsstunden von Aktionen werden automatisch angefordert.</i
           >
-          <m-button slot="buttons">Absenden</m-button>
+          <m-button slot="buttons" id="requestSend">Absenden</m-button>
         </a-box>
-        <m-divider></m-divider>
-        <a-box>
+        <m-divider class="editWorkHours"></m-divider>
+        <a-box class="editWorkHours">
           <a slot="title">Arbeitsstunden bearbeiten</a>
           <m-text-input
-            placeholder="Schüler Suche"
+            placeholder="Suche"
             slot="content"
+            id="editSearch"
           ></m-text-input>
-          <div id="searchResults" slot="content">
-            <a-user>User</a-user>
-          </div>
+          <div id="searchResults" slot="content"></div>
         </a-box>
-        <m-divider></m-divider>
-        <a-request></a-request>
+        <m-divider class="editWorkHours"></m-divider>
       </div>
     </m-overwrite-container>
     <script src="private/render/linker.js" class="server"></script>

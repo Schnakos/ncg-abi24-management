@@ -11,17 +11,18 @@
       <a-top-bar id="topBar" user-color="white">Arbeitsstunden</a-top-bar>
       <div class="listContent">
         <a-box>
-          <a slot="title">Users Arbeitsstunden</a>
+          <a slot="title" id="title">Loading</a>
           <a-progress-bar
             slot="content"
-            progress="80"
-            value="8"
+            progress="0"
+            value="0"
+            id="arbeitsstunden"
           ></a-progress-bar>
         </a-box>
         <a-box>
           <a slot="title">Arbeitsstunden bearbeiten</a>
-          <m-button slot="buttons">+1</m-button>
-          <m-button slot="buttons" type="outlined">-1</m-button>
+          <m-button slot="buttons" id="add">+1</m-button>
+          <m-button slot="buttons" type="outlined" id="remove">-1</m-button>
         </a-box>
       </div>
     </m-overwrite-container>

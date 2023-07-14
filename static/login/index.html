@@ -13,15 +13,17 @@
         <a-box>
           <a slot="title">Login</a>
           <m-text-input
+            id="username"
             slot="content"
             placeholder="Benutzername"
           ></m-text-input>
           <m-text-input
+            id="password"
             slot="content"
             password="true"
             placeholder="Passwort"
           ></m-text-input>
-          <m-button slot="buttons">Anmelden</m-button>
+          <m-button slot="buttons" id="signIn">Anmelden</m-button>
         </a-box>
       </div>
     </m-overwrite-container>
