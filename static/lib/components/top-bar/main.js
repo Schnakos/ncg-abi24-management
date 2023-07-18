@@ -6,6 +6,9 @@ export class Component {
     this.document = options.shadowDom;
     this.user = this.document.getElementById("user");
     this.setUserName();
+    this.user.addEventListener("click", () => {
+      location.pathname = "/arbeitsstunden";
+    });
   }
 
   async setUserName() {
