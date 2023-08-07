@@ -26,14 +26,24 @@ editSearch.addEventListener("change", async () => {
   }
 });
 
+let currentlySending = false;
+
 requestSend.addEventListener("click", async () => {
+  if (currentlySending) return;
+  currentlySending = true;
   requestSend.innerText = "Lädt";
-  await arbeitsstunden.requestArbeitsstunden(
+  let p = arbeitsstunden.requestArbeitsstunden(
     cookie.key,
     requestReason.component.value,
     requestAmount.component.value
   );
+
+  requestReason.component.value = "";
+  requestAmount.component.value = 1;
+
+  await p;
   requestSend.innerText = "Absenden";
+  currentlySending = false;
 });
 
 const updateCurrentWorkHours = async () => {
