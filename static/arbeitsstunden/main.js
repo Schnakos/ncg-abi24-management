@@ -43,6 +43,7 @@ requestSend.addEventListener("click", async () => {
 
   await p;
   requestSend.innerText = "Absenden";
+  alert("Abgesendet!");
   currentlySending = false;
 });
 
