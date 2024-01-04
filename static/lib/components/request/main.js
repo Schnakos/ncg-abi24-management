@@ -37,7 +37,7 @@ export class Component {
       .request;
     this.request = request;
     this.title.innerText = request.name;
-    this.reason.innerText = request.reason;
+    this.reason.innerHTML = request.reason;
     this.subtitle.innerText = request.amount + " Arbeitsstunde(n)";
   }
 
