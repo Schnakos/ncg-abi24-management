@@ -8,7 +8,7 @@ export class Component {
   attributeChangedCallback(attribute, oldValue, newValue) {
     switch (attribute) {
       case "progress":
-        this.progress.style.width = newValue + "%";
+        this.progress.style.width = Math.min(newValue,100) + "%";
         break;
       case "value":
         this.value.innerText = newValue;
