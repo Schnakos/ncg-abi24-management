@@ -34,7 +34,11 @@ export const getFullName = async (uId) => {
   let user = await getUser(uId);
   if (!user.success) return user;
   user = user.user;
-  return { success: true, name: user.name + " " + user.surname };
+  let surname = user.surname;
+  surname = surname.split(" ");
+  surname.unshift(surname.pop());
+  surname = surname.join(" ").replace(/-/g, " ");
+  return { success: true, name: user.name + " " + surname };
 };
 
 export const search = async (search) => {
